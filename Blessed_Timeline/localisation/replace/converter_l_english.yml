@@ -1720,3 +1720,8 @@
  siberian_pagan:3 "Old Turumic"
  tengri_pagan:3 "Old Tengri"
  west_african_orisha_pagan:3 "Old Orisan"
+ KHA:3 "Mongol Mongolia"
+ KHA_ADJ:3 "Mongol Mongolian"
+ KHA_ideas:3 "Mongol Mongolian Ideas"
+ KHA_ideas_bonus:3 "Mongol Mongolian Ambition"
+ KHA_ideas_start:3 "Mongol Mongolian Traditions"

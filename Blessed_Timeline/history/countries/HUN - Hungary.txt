@@ -6,6 +6,7 @@ religion = catholic
 primary_culture = hungarian
 capital = 153
 add_accepted_culture = hungarian
+add_historical_friend = POL
 1444.11.11= {
 	monarch = {
 		name = "Sándor II"

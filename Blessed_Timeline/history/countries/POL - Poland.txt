@@ -6,6 +6,7 @@ religion = catholic
 primary_culture = histrian
 capital = 262
 add_accepted_culture = polish
+add_historical_friend = HUN
 1444.11.11= {
 	monarch = {
 		name = "Pavlos"
