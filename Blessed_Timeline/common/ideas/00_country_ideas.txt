@@ -4516,7 +4516,7 @@ AJU_ideas = {
 		trade_steering = 0.1
 	}
 	aju_fourth_idea = {
-		inflation_reduction = -0.2
+		inflation_reduction = 0.2
 	}
 	aju_fifth_idea = {
 		merchants = 1
