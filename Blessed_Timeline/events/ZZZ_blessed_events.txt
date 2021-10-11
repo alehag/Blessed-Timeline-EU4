@@ -248,7 +248,7 @@ country_event = {
 		}
 		if = {
 			limit = {
-				cities = 30
+				num_of_cities = 30
 			}
 			random_owned_province = {
 				spawn_rebels = {
@@ -287,8 +287,7 @@ country_event = {
 		name = "blessed_events.302a"
 		random_owned_province = {
 			limit = {
-				region = iberia_region
-				religion = catholic
+				has_owner_religion = no
 			}
 			spawn_rebels = {
 				type = pretender_rebels

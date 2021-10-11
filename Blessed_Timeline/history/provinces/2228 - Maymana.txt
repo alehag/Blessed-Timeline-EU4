@@ -10,7 +10,6 @@ base_production = 5
 base_manpower = 4
 add_core = KSH
 add_permanent_claim = KHO
-add_permanent_claim = KHO
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

@@ -244,7 +244,7 @@ pontus_eastward = {
 				fire = 5
 				manuever = 6
 				siege = 5
-				name = "Károlos Andréa Puer Pontos"
+				name = "Karolos Andrea Puer Pontos"
 			}
 		}
 	}
@@ -326,9 +326,6 @@ pontus_order_66 = {
 				skill = 3
 				discount = yes	
 			}
-			country_event = {
-				id = blessed_events.4
-			}
 		}
 	}
 	Z0H_execute_order_66 = {
@@ -339,12 +336,6 @@ pontus_order_66 = {
 			AND = {
 				light_ship_fraction = 0.4
 				dip_power = JED
-				hidden_trigger = {
-					had_country_flag = {
-						flag = prepared_order_66_flag
-						days = 90
-					}
-				}
 			}
 		}
 		effect = {
@@ -414,7 +405,7 @@ pontus_order_66 = {
 		effect = {
 			add_country_modifier = {
 				name = "egypt_smacked_Z0H"
-				duration = 18250
+				duration = 9125
 			}
 		}
 	}

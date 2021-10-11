@@ -145,8 +145,8 @@ AJU_northwards_arabia = {
 		}
 		effect = {
 			add_country_modifier = {
-				name = deal_successfully_altered_AJU
-				duration = -1
+				name = "deal_successfully_altered_AJU"
+				duration = 9125
 			}
 		}
 	}

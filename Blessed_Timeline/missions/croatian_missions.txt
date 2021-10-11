@@ -124,12 +124,12 @@ CRO_center_missions = {
 			}
 		}
 		effect = {
-			add_prestige = 100
-			add_army_tradition = 100
-			add_army_professionalism = 1
+			add_prestige = 50
+			add_army_tradition = 50
+			add_army_professionalism = 0.5
 			add_country_modifier = {
 				name = "greeks_removed_CRO"
-				duration = -1
+				duration = 9125
 			}
 		}
 	}

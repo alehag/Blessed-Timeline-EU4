@@ -26,15 +26,13 @@ ADU_pyrenees_missions = {
 			}
 		}
 		effect = {
-			aragon_area = {
-				type = all
+			basque_country = {
 				limit = {
 					culture = aragonese
 				}
 				add_base_tax = 1
 			}
-			basque_country = {
-				type = all
+			aragon_area = {
 				limit = {
 					culture = aragonese
 				}
@@ -61,21 +59,17 @@ ADU_pyrenees_missions = {
 			}
 		}
 		effect = {
-			ROOT = {
-				every_province = {
-					limit = {
-						area = basque_country
-						culture = aragonese
-					}
-					add_base_production = 1
+			basque_country = {
+				limit = {
+					culture = aragonese
 				}
-				every_province = {
-					limit = {
-						area = aragon_area
-						culture = aragonese
-					}
-					add_base_production = 1
+				add_base_production = 1
+			}
+			aragon_area = {
+				limit = {
+					culture = aragonese
 				}
+				add_base_production = 1
 			}
 		}
 	}
@@ -107,7 +101,6 @@ ADU_pyrenees_missions = {
 		}
 		effect = {
 			basque_country = {
-				type = all
 				add_province_modifier = {
 					name = "brave_mujahideen_ADU"
 					duration = -1
@@ -115,7 +108,6 @@ ADU_pyrenees_missions = {
 				add_base_manpower = 1
 			}
 			aragon_area = {
-				type = all
 				add_province_modifier = {
 					name = "brave_mujahideen_ADU"
 					duration = -1
@@ -161,7 +153,7 @@ ADU_sevilla_missions = {
 
 	ADU_port_of_sevilla = {
 		provinces_to_highlight = {
-			id = 224
+			province_id = 224
 		}
 		trigger = {
 			224 = {
@@ -183,7 +175,7 @@ ADU_sevilla_missions = {
 			ADU_port_of_sevilla
 		}
 		provinces_to_highlight = {
-			id = 223
+			province_id = 223
 		}
 		trigger = {
 			223 = {
@@ -215,7 +207,6 @@ ADU_sevilla_missions = {
 		}
 		effect = {
 			catalonia_area = {
-				type = all
 				add_province_modifier = {
 					name = "sufi_presence_ADU"
 					duration = 5475
@@ -379,14 +370,12 @@ ADU_iberia_missions = {
 					exists = EGY
 				}
 				egypt_region = {
-					type = all
 					limit = {
 						owned_by = ROOT
 					}
 					cede_province = EGY
 				}
 				palestine_area = {
-					type = all
 					limit = {
 						owned_by = ROOT
 					}
