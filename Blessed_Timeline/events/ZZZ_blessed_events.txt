@@ -4,7 +4,7 @@
 # 3 for the Smackening								  	#
 # 101-199 for the Pontic Order 66 events			  	#
 # 201-299 for the Slavic Union events.				  	#
-#														#
+# 301-399 for the Andalusian disaster					#
 #														#
 #														#
 #														#
@@ -24,6 +24,8 @@ country_event = {
 	title = "blessed_events.1title"
 	desc = "blessed_events.1desc"
 	picture = SHIP_SAILING_eventPicture
+	
+	major = yes
 
 	trigger = {
 		ai = no
@@ -210,3 +212,118 @@ country_event = {
 		add_stability = -2
 	}
 }
+
+country_event = {
+	id = blessed_events.301
+	title = "blessed_events.301title"
+	desc = "blessed_events.301desc"
+	picture = ANGRY_MOB_eventPicture
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = "blessed_events.301a"
+		ai_chance = { factor = 1 }
+		add_government_reform = plutocratic_reform
+		if = {
+			limit = {
+				has_parliament = no
+			}
+			add_government_reform = parliamentary_reform
+		}
+		kill_ruler = yes
+		kill_heir = yes
+		add_stability = -1
+		add_yearly_manpower = -2.5
+		define_ruler = {
+			dynasty = "Sumadid"
+		}
+		random_owned_province = {
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 3
+			}
+		}
+		if = {
+			limit = {
+				cities = 30
+			}
+			random_owned_province = {
+				spawn_rebels = {
+					type = pretender_rebels
+					size = 3
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = blessed_events.310
+	title = "blessed_events.310title"
+	desc = "blessed_events.310desc"
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = "blessed_events.310a"
+		add_legitimacy = 20
+		change_government_reform_progress = 100
+	}
+}
+country_event = {
+	id = blessed_events.302
+	title = "blessed_events.302title"
+	desc = "blessed_events.302desc"
+	picture = ANGRY_MOB_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "blessed_events.302a"
+		random_owned_province = {
+			limit = {
+				region = iberia_region
+				religion = catholic
+			}
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 2
+			}
+		}
+	}
+	option = {
+		name = "blessed_events.302b"
+		add_years_of_income = -0.25
+	}
+}
+country_event = {
+	id = blessed_events.303
+	title = "blessed_events.303title"
+	desc = "blessed_events.303desc"
+	picture = ANGRY_MOB_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "blessed_events.303a"
+		random_owned_province = {
+			limit = {
+				culture = catalan
+			}
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 2
+			}
+		}
+	}
+	option = {
+		name = "blessed_events.303b"
+		add_years_of_income = -0.25
+	}
+}
+		

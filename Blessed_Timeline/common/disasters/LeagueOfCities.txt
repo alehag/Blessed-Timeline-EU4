@@ -1,0 +1,81 @@
+league_of_cities = {
+	ended_by_country_breaking_to_rebels = no
+	potential = {
+		tag = ADU
+		OR = {
+			has_reform = iqta
+			has_reform = feudal_theocracy
+		}
+		is_free_or_tributary_trigger = yes
+		is_lesser_in_union = no
+	}
+	
+	can_start = {
+		current_age = age_of_absolutism
+		has_any_disaster = no
+		NOT = {
+			estate_loyalty = {
+				estate = estate_burghers
+				loyalty = 50
+			}
+			stability = 3
+		}
+	}
+	
+	can_stop = {
+		OR = {
+			has_any_disaster = yes
+			stability = 3
+			estate_loyalty = {
+				estate = estate_burghers
+				loyalty = 70
+			}
+		}
+	}
+	
+	progress = {
+		modifier = {
+			factor = 1
+			NOT = { legitimacy = 90 }
+		}
+		modifier = {
+			factor = 1
+			absolutism = 50
+		}
+		modifier = {
+			factor = 1
+			estate_influence = {
+				estate = estate_burghers
+				influence = 40
+			}
+		}
+		modifier = {
+			factor = 3
+			absolutism = 70
+		}
+	}
+	
+	modifier = {
+		global_unrest = 9
+		stability_cost_modifier = 0.2
+	}
+	
+	can_end = {
+		NOT = { num_of_rebel_armies = 1 }
+		NOT = { num_of_rebel_controlled_provinces = 1 }
+		stability = 3
+	}
+	
+	on_start = blessed_events.301
+	on_end = blessed_events.310
+	
+	on_monthly = {
+		events = { }
+		random_events = {
+			1000 = 0
+			100 = blessed_events.302
+			100 = blessed_events.303
+		}
+	}
+}
+			
